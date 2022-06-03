@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/splashscreenimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/vidler"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cschat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashscreenimage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cs_chat"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textColor="@color/teal_700"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:letterSpacing="0.22"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cschat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    android:padding="10dp"
+    tools:context=".SignUp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SignUpIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/vidler" />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_marginBottom="@android:dimen/app_icon_size"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/inputNickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/outlined_box"
+            android:drawableStart="@drawable/ic_person_24"
+            android:drawablePadding="10dp"
+            android:hint="Nickname..."
+            android:padding="10dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/outlined_box"
+            android:drawableStart="@drawable/ic_mail_24"
+            android:drawablePadding="10dp"
+            android:hint="Email.."
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/outlined_box"
+            android:drawableStart="@drawable/ic_lock_24"
+            android:drawablePadding="10dp"
+            android:hint="Password..."
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:elevation="10dp"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/alreadyacct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account. Log In"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_circular_2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/l1"
+        android:layout_width="50dp"
+        android:indeterminateTint="@color/white"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

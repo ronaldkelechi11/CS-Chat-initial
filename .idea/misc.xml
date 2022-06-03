@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/circular_progres.xml" value="0.46484375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/ic_add_24.xml" value="0.46484375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/ic_lock_24.xml" value="0.46484375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/ic_mail_24.xml" value="0.46484375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/ic_round_24.xml" value="0.46484375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/linear_layout.xml" value="0.46484375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/outgoing.xml" value="0.3098958333333333" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/outlined_box.xml" value="0.5" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/drawable/outlined_box_2.xml" value="0.46484375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_add_timetable_item.xml" value="0.2796875" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_home_screen.xml" value="0.29375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_log_in.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_sign_up.xml" value="0.2630208333333333" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_timetable.xml" value="0.29375" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/custom_list.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

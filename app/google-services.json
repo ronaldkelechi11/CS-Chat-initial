@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "574713875447",
+    "project_id": "vidler-37cfa",
+    "storage_bucket": "vidler-37cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574713875447:android:afdc1de343c9fa2899fcf2",
+        "android_client_info": {
+          "package_name": "com.bms.cs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574713875447-g5ggcb9e8lklp2semhal0nsl3gjnl58d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpu-0Zq7IUvmfttmnRrUwgC716O9DxnNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574713875447-g5ggcb9e8lklp2semhal0nsl3gjnl58d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
