@@ -63,10 +63,12 @@ public class Timetable extends AppCompatActivity {
 
         arrayList = new ArrayList();
 
+
         arrayList.add(new TimeTableItem("Tuesday","9:00am to 11:00am","GST 101: Use of English 1","Statistics Hall"));
         arrayList.add(new TimeTableItem("Wednesday","9:00am to 11:00am","GST 103:Citizenship Education","Lecture East"));
         arrayList.add(new TimeTableItem("Wednesday","12:00pm to 2:00pm","GST 105:Philosophy and Logic","New Exam Hall"));
         arrayList.add(new TimeTableItem("Thursday","9:00am to 11:00am","GST 121:Use of Library","Lecture East Big Hall"));
         arrayList.add(new TimeTableItem("Friday","9:00am to 11:00am","GST 109:Basic Ibo","New Exam Hall"));
+        arrayList.add(new TimeTableItem(d,t,c,l));
     }
 }

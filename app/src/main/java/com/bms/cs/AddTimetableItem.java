@@ -29,25 +29,28 @@ public class AddTimetableItem extends AppCompatActivity {
         add = findViewById(R.id.add_button);
 
 
-        //Converting all EditText's to String's
-    String coursetxt = course.getText().toString();
-    String datetxt = date.getText().toString();
-    String timetxt = time.getText().toString();
-    String locationtxt = location.getText().toString();
+
 
     add.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
 
+            //Converting all EditText's to String's
+            //Putting it hear proves that i've learnt from my past mistake in the signUp page
+            String coursetxt = course.getText().toString();
+            String datetxt = date.getText().toString();
+            String timetxt = time.getText().toString();
+            String locationtxt = location.getText().toString();
+
 
             //Validation Of Text Fields
             if(coursetxt.isEmpty()){
-                course.setError("Field can't be Empty");
+                course.setError("Field cannot be Empty");
                 course.requestFocus();
                 return;
             }
             if(datetxt.isEmpty()){
-                date.setError("Field can't be Empty");
+                date.setError("Field cannot be Empty");
                 date.requestFocus();
                 return;
             }
@@ -63,17 +66,13 @@ public class AddTimetableItem extends AppCompatActivity {
             }
 
 
-            //Passing the Information into the 
+            //Passing the Information into the
             Intent i = new Intent(getApplicationContext(),Timetable.class);
             i.putExtra("ncourse",coursetxt);
             i.putExtra("ndate",datetxt);
             i.putExtra("ntime",timetxt);
             i.putExtra("nlocation",locationtxt);
             startActivity(i);
-
-
-
-
         }
     });
 
