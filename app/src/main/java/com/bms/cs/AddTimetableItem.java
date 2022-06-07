@@ -66,7 +66,7 @@ public class AddTimetableItem extends AppCompatActivity {
             }
 
 
-            //Passing the Information into the
+            //Passing the Information into the next Activity
             Intent i = new Intent(getApplicationContext(),Timetable.class);
             i.putExtra("ncourse",coursetxt);
             i.putExtra("ndate",datetxt);
