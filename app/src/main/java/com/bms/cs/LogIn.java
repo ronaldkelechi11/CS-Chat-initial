@@ -17,7 +17,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class LogIn extends AppCompatActivity {
     EditText logInEmail,logInPassword;
@@ -54,7 +53,6 @@ public class LogIn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
                 //Conversion of EditText to Strings
                String usname = logInEmail.getText().toString();
                String passwrd = logInPassword.getText().toString();
@@ -71,21 +69,27 @@ public class LogIn extends AppCompatActivity {
                    logInPassword.requestFocus();
                    return;
                }
+             String uId = FirebaseAuth.getInstance().getUid().toString();
 
                 progressBar.setVisibility(View.VISIBLE);
             mAuth.signInWithEmailAndPassword(usname,passwrd)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (FirebaseAuth.getInstance().getCurrentUser() != null){
-                            Toast.makeText(getApplicationContext(), "User does exists", Toast.LENGTH_SHORT).show();
+
+                            // Checks if the User account exists
+                            if (FirebaseAuth.getInstance().getCurrentUser().getUid() == null){
+                            Toast.makeText(getApplicationContext(), "User Does not Exist", Toast.LENGTH_SHORT).show();
                                 }
+
                             if(task.isSuccessful()){
                                 FirebaseUser currentUser = mAuth.getCurrentUser();
 
                                 //This gets the User data and gets his Email Address and Displays in a Toast
                                 assert currentUser != null;// This is just to make sure it doesn't bring back a null Value
-                                Toast.makeText(getApplicationContext(),currentUser.getEmail().toString() + " just Signed In",Toast.LENGTH_SHORT).show();
+
+                                //This makes use of concatenation to display the Email
+                                Toast.makeText(getApplicationContext(),currentUser.getEmail() + " just Signed In",Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(LogIn.this,HomeScreen.class);
                                 startActivity(i);
                             }

@@ -60,7 +60,7 @@ public class AddTimetableItem extends AppCompatActivity {
                 return;
             }
             if (locationtxt.isEmpty()){
-                location.setError("Location Cant Be empty");
+                location.setError("Location Cannot Be empty");
                 location.requestFocus();
                 return;
             }

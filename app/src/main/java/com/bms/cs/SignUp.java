@@ -89,8 +89,6 @@ public class SignUp extends AppCompatActivity {
 
 
                 progressBar2.setVisibility(View.VISIBLE);
-
-
                 /*
                 Creation of User and Input into Database works by creating User class and checking input to database
                 and error output on failed.
