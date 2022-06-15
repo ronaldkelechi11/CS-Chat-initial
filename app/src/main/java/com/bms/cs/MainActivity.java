@@ -9,9 +9,6 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 
 public class MainActivity extends AppCompatActivity {
     int splashScreen = 5000;

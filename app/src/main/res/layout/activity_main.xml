@@ -13,13 +13,14 @@
         android:layout_height="100dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        app:cardCornerRadius="10dp"
-
+        app:cardCornerRadius="20dp"
+        android:outlineSpotShadowColor="@color/white"
+        app:cardBackgroundColor="@android:color/transparent"
         >
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/vidler"
+            android:src="@mipmap/cs_chat_new"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             />
@@ -34,19 +35,20 @@
         android:text="@string/cs_chat"
         android:layout_marginTop="30dp"
         android:textSize="30sp"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/white"
         android:fontFamily="sans-serif-condensed-medium"
         android:textStyle="bold"
         android:letterSpacing="0.22"
         />
 
     <ProgressBar
+        android:indeterminateTint="@color/white"
         android:id="@+id/progress_circular"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_below="@+id/cschat"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
          />
 
 </RelativeLayout>

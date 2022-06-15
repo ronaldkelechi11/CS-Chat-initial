@@ -52,14 +52,27 @@
     <ListView
         android:id="@+id/listviewTimeTable"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/toolbarTimetable"
         android:divider="@android:color/transparent"
         android:dividerHeight="20dp"
         android:padding="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarTimetable"
-        tools:listitem="@layout/custom_list" >
-    </ListView>
+        tools:listitem="@layout/custom_list" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom List"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:background="@android:color/transparent"
+        android:textAlignment="center"
+        android:layout_below="@+id/listviewTimeTable"
+    />
+
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"

@@ -12,27 +12,31 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:outlineAmbientShadowColor="@color/white"
+        app:cardBackgroundColor="@android:color/transparent"
         >
-
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/vidler" />
+            android:src="@mipmap/cs_chat_new" />
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/txtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/l1"
         android:layout_below="@+id/SignUpIcon"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
+        android:padding="3dp"
         android:layout_marginBottom="0dp"
         android:fontFamily="sans-serif-condensed-medium"
+        android:letterSpacing="0.1"
         android:text="Log In"
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -58,7 +62,7 @@
             android:drawablePadding="10dp"
             android:hint="Email.."
             android:inputType="textEmailAddress"
-            android:padding="5dp"
+            android:padding="10dp"
             android:paddingRight="7dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -77,7 +81,7 @@
             android:drawablePadding="10dp"
             android:hint="Password..."
             android:inputType="textPassword"
-            android:padding="5dp"
+            android:padding="10dp"
             android:paddingRight="7dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -90,7 +94,7 @@
         <Button
             android:id="@+id/confirm_button_login"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:elevation="10dp"
             android:text="Confirm"
             android:textColor="@color/white"

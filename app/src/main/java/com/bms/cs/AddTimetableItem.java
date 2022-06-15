@@ -1,13 +1,17 @@
 package com.bms.cs;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.bms.cs.Timetable;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.bms.cs.classes.TimeTableItem;
 
 public class AddTimetableItem extends AppCompatActivity {
     ImageView bckbttn;
@@ -43,6 +47,8 @@ public class AddTimetableItem extends AppCompatActivity {
             String locationtxt = location.getText().toString();
 
 
+
+
             //Validation Of Text Fields
             if(coursetxt.isEmpty()){
                 course.setError("Field cannot be Empty");
@@ -65,14 +71,22 @@ public class AddTimetableItem extends AppCompatActivity {
                 return;
             }
 
+            //Created a timetable Item then passed it into Intent
+            TimeTableItem t = new TimeTableItem(coursetxt,datetxt,timetxt,locationtxt);
 
             //Passing the Information into the next Activity
             Intent i = new Intent(getApplicationContext(),Timetable.class);
-            i.putExtra("ncourse",coursetxt);
+            i.putExtra("nT", (Parcelable) t);
             i.putExtra("ndate",datetxt);
             i.putExtra("ntime",timetxt);
             i.putExtra("nlocation",locationtxt);
             startActivity(i);
+
+
+
+
+
+
         }
     });
 
