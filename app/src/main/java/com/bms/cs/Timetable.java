@@ -25,7 +25,14 @@ public class Timetable extends AppCompatActivity {
         setContentView(R.layout.activity_timetable);
 
         bck = findViewById(R.id.backtble);
-        addBtn = findViewById(R.id.fab);
+        addBtn = findViewById(R.id.fabTV);
+
+
+        listView = findViewById(R.id.listviewTimeTable);
+        listItemShow();
+
+        com.bms.cs.ListAdapter listAdapter = new com.bms.cs.ListAdapter(this, arrayListtm);
+        listView.setAdapter(listAdapter);
 
 
         bck.setOnClickListener(new View.OnClickListener() {
@@ -35,12 +42,6 @@ public class Timetable extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-        listView = findViewById(R.id.listviewTimeTable);
-        listItemShow();
-
-        com.bms.cs.ListAdapter listAdapter = new com.bms.cs.ListAdapter(this, arrayListtm);
-        listView.setAdapter(listAdapter);
 
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override

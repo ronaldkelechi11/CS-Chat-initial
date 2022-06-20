@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@color/darkBlue"
-    tools:context=".Timetable">
+    android:layout_height="match_parent"
+    tools:context=".GroupView">
 
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -15,7 +16,7 @@
         android:background="@android:color/transparent"
         android:maxHeight="60dp"
         android:minHeight="30dp"
-        android:padding="5dp"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -27,7 +28,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="@raw/poppins"
                 android:padding="2dp"
                 android:text="@string/cs_chat"
                 android:textColor="@color/white"
@@ -37,15 +38,16 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/backtble"
+                android:id="@+id/search_buttonGV"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:padding="5dp"
-                android:src="@drawable/ic_right_24"
+                android:src="@drawable/ic_search_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.MaterialToolbar>
 
@@ -56,25 +58,12 @@
         android:layout_below="@+id/toolbarTimetable"
         android:divider="@android:color/transparent"
         android:dividerHeight="20dp"
-        android:padding="10dp"
-        tools:listitem="@layout/custom_list" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Custom List"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textSize="32sp"
-        android:textColor="@color/white"
-        android:background="@android:color/transparent"
-        android:textAlignment="center"
-        android:layout_below="@+id/listviewTimeTable"
-    />
-
-
+        android:entries="home"
+        android:padding="12dp"
+        tools:listitem="@layout/custom_group_view" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabTV"
+        android:id="@+id/fabGV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -85,4 +74,6 @@
         app:backgroundTint="@color/teal_700"
         app:maxImageSize="50dp"
         app:rippleColor="@color/teal_200" />
+
+
 </RelativeLayout>

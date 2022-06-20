@@ -25,13 +25,22 @@ public class AddTimetableItem extends AppCompatActivity {
 
 
         //Initializing all Fields
-        bckbttn = findViewById(R.id.backtblett);
+        bckbttn = findViewById(R.id.backtblettATI);
         course = findViewById(R.id.inputCourse);
         date = findViewById(R.id.inputDate);
         time = findViewById(R.id.inputTime);
         location = findViewById(R.id.inputLocation);
         add = findViewById(R.id.add_button);
 
+
+        // Back Button to Timetable Screen
+        bckbttn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent I = new Intent (getApplicationContext(), Timetable.class);
+                startActivity(I);
+            }
+        });
 
 
 

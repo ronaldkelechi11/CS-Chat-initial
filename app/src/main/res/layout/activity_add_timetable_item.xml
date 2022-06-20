@@ -8,7 +8,6 @@
     tools:context=".AddTimetableItem">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbarTimetable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -26,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="@raw/poppins"
                 android:padding="2dp"
                 android:text="@string/cs_chat"
                 android:textColor="@color/white"
@@ -36,7 +35,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/backtblett"
+                android:id="@+id/backtblettATI"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:fontFamily="sans-serif-condensed-medium"
@@ -65,6 +64,7 @@
             android:layout_height="50dp"
             android:background="@drawable/outlined_box"
             android:hint="Course"
+            android:fontFamily="@raw/poppins"
             android:padding="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/grey"
@@ -78,6 +78,7 @@
             android:id="@+id/inputDate"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:fontFamily="@raw/poppins"
             android:background="@drawable/outlined_box"
             android:hint="Date"
             android:inputType="date"
@@ -97,6 +98,7 @@
             android:background="@drawable/outlined_box"
             android:hint="Time"
             android:padding="10dp"
+            android:fontFamily="@raw/poppins"
             android:textColor="@color/white"
             android:textColorHint="@color/grey"
             android:textSize="16sp" />
@@ -109,6 +111,7 @@
             android:id="@+id/inputLocation"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:fontFamily="@raw/poppins"
             android:background="@drawable/outlined_box"
             android:hint="Location"
             android:padding="10dp"
@@ -124,6 +127,8 @@
             android:id="@+id/add_button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:textStyle="bold"
+            android:fontFamily="@raw/poppins"
             android:elevation="10dp"
             android:text="ADD"
             android:textColor="@color/white"

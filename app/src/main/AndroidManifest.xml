@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSChat">
         <activity
+            android:name=".GroupView"
+            android:exported="false" />
+        <activity
             android:name=".add_group"
             android:exported="false" />
         <activity
