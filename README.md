@@ -7,7 +7,9 @@
 📌 Group Chat with a max size of around 200 members....<br>
 📌 GST Timetable for 100 level students with option to add and customize your personal Timetable....<br>
 📌 Reminder's and To-DO's to help groom reading culture.....<br>
-📌 More feature sto be added in coming weeks...after commits 12<br>
+📌 More feature to be added in coming weeks...after commits 12<br>
+
+📌Newly added notes feature to store notes locally on your device and Update to save to the Cloud<br>
 
 
 > This app will surely revolutionise Tertiary students learning....
