@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSChat">
         <activity
+            android:name=".NotesView"
+            android:exported="false" />
+        <activity
             android:name=".GroupView"
             android:exported="false" />
         <activity

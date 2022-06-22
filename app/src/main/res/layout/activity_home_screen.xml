@@ -223,7 +223,7 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cschatReminder"
+            android:id="@+id/cschatNotes"
             android:layout_below="@+id/space3"
             android:layout_width="match_parent"
             android:layout_height="90dp"

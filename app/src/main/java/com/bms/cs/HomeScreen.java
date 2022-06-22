@@ -13,7 +13,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeScreen extends AppCompatActivity {
     ImageView logout_butt;
-    CardView Timetablebutt;
+    CardView Timetablebutt,Notesbutt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class HomeScreen extends AppCompatActivity {
 
         logout_butt = findViewById(R.id.logout);
         Timetablebutt = findViewById(R.id.cschatTble);
+        Notesbutt = findViewById(R.id.cschatNotes);
 
         logout_butt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,14 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
+        //  Redirect to Notes Page where you see all the notes displayed
+        Notesbutt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeScreen.this,NotesView.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

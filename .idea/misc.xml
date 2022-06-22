@@ -18,11 +18,13 @@
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_home_screen.xml" value="0.29375" />
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_log_in.xml" value="0.2630208333333333" />
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_main.xml" value="0.28923076923076924" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_notes_view.xml" value="0.29375" />
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_sign_up.xml" value="0.2630208333333333" />
-        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_timetable.xml" value="0.33" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/activity_timetable.xml" value="0.28923076923076924" />
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/custom_group_item.xml" value="0.29375" />
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/custom_group_view.xml" value="0.33" />
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/custom_list.xml" value="0.5" />
+        <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/layout/custom_notes_view.xml" value="0.29375" />
         <entry key="..\:/Users/DELL/Documents/Android projects/CS Chat/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3098958333333333" />
       </map>
     </option>

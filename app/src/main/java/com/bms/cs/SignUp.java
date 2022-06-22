@@ -19,6 +19,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class SignUp extends AppCompatActivity {
     EditText Nickname,Email,Password;
     Button Confirm;
@@ -61,6 +66,8 @@ public class SignUp extends AppCompatActivity {
                 String email = Email.getText().toString();
                 String password = Password.getText().toString();
 
+                String validation = "Auth.txt";
+
 
 
                 //Checking the validity opf the Input Fields
@@ -98,12 +105,25 @@ public class SignUp extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             User user = new User(email,nickname);
+
                             FirebaseDatabase.getInstance().getReference("Users")
                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                             .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                    if(task.isSuccessful()){
+
+                                       // File saved locally to see if User ahs logged in before...
+                                       try {
+                                           FileOutputStream output = new FileOutputStream(validation);
+                                           String call = "Successful";
+                                           output.write(call.getBytes());
+                                           output.close();
+                                       } catch (FileNotFoundException e) {
+                                           e.printStackTrace();
+                                       } catch (IOException e) {
+                                           e.printStackTrace();
+                                       }
 
                                        Intent i = new Intent(SignUp.this,HomeScreen.class);
                                        startActivity(i);
