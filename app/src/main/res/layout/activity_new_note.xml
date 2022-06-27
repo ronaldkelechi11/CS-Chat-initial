@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@color/darkBlue"
-    tools:context=".NotesView">
+    android:layout_height="match_parent"
+    tools:context=".NewNote">
 
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbarTimetable"
+        android:id="@+id/toolbarNewNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -37,12 +37,12 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/search_buttonGV"
+                android:id="@+id/back_buttonNN"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:padding="5dp"
-                android:src="@drawable/ic_search_24"
+                android:src="@drawable/ic_right_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -50,30 +50,48 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <ListView
-        android:id="@+id/listviewTimeTable"
+    <LinearLayout
+        android:id="@+id/n"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toolbarTimetable"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="20dp"
-        android:entries="home"
-        android:padding="12dp"
-         />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabNV"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/ic_add_24"
-        app:backgroundTint="@color/teal_700"
-        app:maxImageSize="50dp"
-        app:rippleColor="@color/teal_200" />
+        android:layout_below="@id/toolbarNewNote"
+        android:padding="10dp"
+        android:orientation="vertical"
+   >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@raw/poppins"
+            android:textSize="24sp"
+            android:hint="Title"
+            android:textColorHint="@color/grey"
+            />
 
+        <Space
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="250"
+            android:hint="Write"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textColorHint="@color/grey"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
 
-
+    <Button
+        android:id="@+id/saveNN"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/n"
+        android:layout_centerHorizontal="true"
+    />
 </RelativeLayout>

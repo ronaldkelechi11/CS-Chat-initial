@@ -113,17 +113,8 @@ public class SignUp extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
                                    if(task.isSuccessful()){
 
-                                       // File saved locally to see if User ahs logged in before...
-                                       try {
-                                           FileOutputStream output = new FileOutputStream(validation);
-                                           String call = "Successful";
-                                           output.write(call.getBytes());
-                                           output.close();
-                                       } catch (FileNotFoundException e) {
-                                           e.printStackTrace();
-                                       } catch (IOException e) {
-                                           e.printStackTrace();
-                                       }
+                                       // File saved locally to see if User has logged in before...
+
 
                                        Intent i = new Intent(SignUp.this,HomeScreen.class);
                                        startActivity(i);

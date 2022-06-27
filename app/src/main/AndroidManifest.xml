@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SET_ALARM" />
 
     <application
@@ -17,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSChat">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".NotesView"
             android:exported="false" />
         <activity
@@ -24,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".add_group"
-            android:exported="false" />
-        <activity
-            android:name=".AddTimetableItem"
             android:exported="false" />
         <activity
             android:name=".Timetable"
@@ -41,7 +40,7 @@
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".NewNote"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
