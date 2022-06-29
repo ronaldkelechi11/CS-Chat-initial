@@ -56,11 +56,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbarTimetable"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="20dp"
-        android:entries="home"
         android:padding="12dp"
-        />
+        tools:listitem="@layout/custom_group_view" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabGV"

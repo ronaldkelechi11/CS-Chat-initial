@@ -57,8 +57,8 @@
         android:layout_below="@+id/toolbarTimetable"
         android:divider="@android:color/transparent"
         android:dividerHeight="20dp"
-        android:entries="home"
         android:padding="12dp"
+        tools:listitem="@layout/custom_notes_view"
          />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

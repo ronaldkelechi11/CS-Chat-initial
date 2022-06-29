@@ -1,7 +1,9 @@
 package com.bms.cs.classes;
 
 
-public class Notes {
+import java.io.Serializable;
+
+public class Notes implements Serializable {
     String title;
     String textM;
 

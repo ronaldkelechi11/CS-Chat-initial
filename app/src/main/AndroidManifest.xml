@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSChat">
         <activity
-            android:name=".MainActivity"
+            android:name=".NewNote"
             android:exported="false" />
         <activity
             android:name=".NotesView"
@@ -40,7 +40,7 @@
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".NewNote"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
