@@ -2,29 +2,41 @@ package com.bms.cs.classes;
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Notes implements Serializable {
-    String title;
-    String textM;
+    String Title,description;
+    int id;
+    ArrayList<Notes> notesArrayList;
 
-    public Notes(String title, String textM) {
-        this.title = title;
-        this.textM = textM;
+
+    public Notes(String title, String description, int id) {
+        Title = title;
+        this.description = description;
+        this.id = id;
     }
 
     public String getTitle() {
-        return title;
+        return Title;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        Title = title;
     }
 
-    public String getTextM() {
-        return textM;
+    public String getDescription() {
+        return description;
     }
 
-    public void setTextM(String textM) {
-        this.textM = textM;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

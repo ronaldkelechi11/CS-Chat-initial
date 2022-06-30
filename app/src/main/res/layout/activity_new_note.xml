@@ -42,6 +42,7 @@
                 android:layout_height="48dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:padding="5dp"
+                android:onClick="backToNotesView"
                 android:src="@drawable/ic_right_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +77,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="250"
+            android:maxLength="300"
             android:hint="Write"
             android:fontFamily="@raw/poppins"
             android:textSize="24sp"
@@ -86,13 +87,38 @@
             android:backgroundTint="@color/white"/>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/saveNN"
-        android:layout_marginTop="50dp"
-        android:layout_height="50dp"
-        android:layout_width="wrap_content"
-        android:text="Save"
+    <LinearLayout
         android:layout_below="@+id/n"
-        android:layout_centerHorizontal="true"
-    />
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/DeleteNN"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:text="Delete"
+                android:onClick="DeleteNote"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/SaveNN"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:text="Save"
+                android:onClick="saveNote"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
 </RelativeLayout>

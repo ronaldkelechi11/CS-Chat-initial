@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/chat_small" />
+            android:src="@mipmap/cs_chat_new" />
     </androidx.cardview.widget.CardView>
 
 
@@ -95,7 +95,7 @@
         <Button
             android:id="@+id/confirm_button"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:elevation="10dp"
             android:text="Confirm"
             android:textColor="@color/white"
@@ -109,6 +109,7 @@
             android:id="@+id/alreadyacct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@raw/poppins"
             android:text="Already have an account. Log In"
             android:textAlignment="center"
             android:textColor="@color/white" />

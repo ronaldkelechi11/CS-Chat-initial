@@ -59,16 +59,4 @@
         android:padding="10dp"
         tools:listitem="@layout/custom_list" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Custom List"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textSize="32sp"
-        android:textColor="@color/white"
-        android:background="@android:color/transparent"
-        android:textAlignment="center"
-        android:layout_below="@+id/listviewTimeTable"
-    />
-
 </RelativeLayout>

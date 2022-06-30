@@ -15,7 +15,7 @@
         >
 
         <TextView
-            android:id="@+id/GroupNameTxt"
+            android:id="@+id/NoteTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@raw/poppins"

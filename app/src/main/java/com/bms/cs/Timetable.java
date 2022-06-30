@@ -8,6 +8,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bms.cs.Adapters.ListAdapterTV;
 import com.bms.cs.classes.TimeTableItem;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 public class Timetable extends AppCompatActivity {
     public ArrayList arrayListtm;
     ListView listView;
+
     ImageView bck;
 
     @Override
@@ -30,7 +32,7 @@ public class Timetable extends AppCompatActivity {
         listView = findViewById(R.id.listviewTimeTable);
         listItemShow();
 
-        com.bms.cs.ListAdapter listAdapter = new com.bms.cs.ListAdapter(this, arrayListtm);
+        ListAdapterTV listAdapter = new ListAdapterTV(this, arrayListtm);
         listView.setAdapter(listAdapter);
 
 
