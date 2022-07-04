@@ -60,6 +60,7 @@
         android:orientation="vertical"
    >
         <EditText
+            android:id="@+id/titletext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="20"
@@ -75,6 +76,7 @@
             android:layout_width="match_parent"
         />
         <EditText
+            android:id="@+id/descriptiontext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="300"

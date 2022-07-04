@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Notes implements Serializable {
     String Title,description;
     int id;
-    ArrayList<Notes> notesArrayList;
+
 
 
     public Notes(String title, String description, int id) {

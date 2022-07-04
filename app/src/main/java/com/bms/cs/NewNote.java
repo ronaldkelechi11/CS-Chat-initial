@@ -5,16 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.bms.cs.classes.Notes;
 
 public class NewNote extends AppCompatActivity {
+    EditText title,description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_note);
+
+        title = findViewById(R.id.)
 
     }
      // When Save is pressed
