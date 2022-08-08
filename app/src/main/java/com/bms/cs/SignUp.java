@@ -103,6 +103,8 @@ public class SignUp extends AppCompatActivity {
                 mAuth.createUserWithEmailAndPassword(email,nickname).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
+
                         if(task.isSuccessful()){
                             User user = new User(email,nickname);
 
@@ -132,6 +134,8 @@ public class SignUp extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "User Registration Issues", Toast.LENGTH_SHORT).show();
                             System.out.println("Registration Issues");
                         }
+
+                        
                     }
                 });
 
